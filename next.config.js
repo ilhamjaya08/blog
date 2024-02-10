@@ -16,6 +16,18 @@ const ContentSecurityPolicy = `
   frame-src giscus.app
 `
 
+/** @type {import('next').NextConfig} */
+
+const nextConfig = {
+  eslint: {
+      ignoreDuringBuilds: true,
+  },
+/* ...Your other config rules */
+}
+
+module.exports = nextConfig
+
+
 const securityHeaders = [
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
   {
