@@ -20,6 +20,7 @@ export default function Projects() {
           <div className="-m-4 flex flex-wrap">
             {projectsData.map((d) => (
               <Card
+                key={d.title}
                 title={d.title}
                 description={d.description}
                 imgSrc={d.imgSrc}
